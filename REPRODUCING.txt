@@ -1,0 +1,17 @@
+transformerLM — work in progress
+
+Personal work based on Stanford CS336 Assignment 1. See LICENSE for attribution.
+Current source includes Python BPE training and tokenizer work, plus a Rust/PyO3 accelerator. Tokenizer encoding is unfinished.
+
+Requirements: uv, Python 3.12 or 3.13, and a Rust toolchain supporting edition 2024.
+
+From the repository root:
+  uv sync --locked
+  uv pip install ./src/bpe_accelerator
+
+The existing Python modules use sibling imports. Run scripts from src/, or include src/ on PYTHONPATH when importing bpe from the repository root.
+Optional accelerator smoke check:
+  uv run python src/test_bpe.py
+
+Course tests, assignment PDF, submission script, and Markdown files are intentionally omitted. The small smoke check creates its own temporary corpus. Larger training runs require your own input data.
+The nested accelerator CI file is retained as generated reference; GitHub only runs workflows in the root .github/workflows directory.
