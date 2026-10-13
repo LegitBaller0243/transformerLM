@@ -249,44 +249,6 @@ mod bpe_accelerator {
         println!("Elapsed time for maximum key check: {:?}", elapsed); // put exclamation point to print to stdout
         convert_to_py_types(py, vocab, merges)
     }
-    fn merge_(
-        token_bytes: &[u8],
-        encode_vocab: &HashMap<Vec<u8>, u32>,
-        merges: &Vec<(Vec<u8>, Vec<u8>)>) 
-    -> Vec<u32> {
-        let mut token_ids: Vec<u32> = Vec::new();
-        // i need to turn the token_bytes ref into a list so i can combine elements quickly
-        let mut parts: Vec<Vec<u8>> = token_bytes.iter().map(|&b| vec![b]).collect();
-        // for each token bytes - Vec<u8>
-
-        for j in 0..merges.len() {
-            let mut i = 0;
-            let first = &merges[j].0;
-            let second = &merges[j].1;
-
-            let mut new_parts = Vec::new();
-            while i < parts.len() {
-             // check if the merge is applicable to the current pair of token_bytes
-             // combine then keep going
-                if i < parts.len() - 1  && &parts[i] == first && &parts[i + 1] == second {
-                    let mut combined = parts[i].clone();
-                    combined.extend(&parts[i + 1]);
-                    new_parts.push(combined);
-                    i += 2;
-                } else {
-                    new_parts.push(parts[i].clone());
-                    i += 1;
-                }
-            }
-            parts = new_parts;
-        }
-        for j in 0..parts.len() {
-            let token_chunk: Vec<u8> = parts[j].clone();
-            token_ids.push(encode_vocab[&token_chunk]);
-        }
-
-        return token_ids
-    }
     fn merge_fast(
         token_bytes: &[u8],
         encode_vocab: &HashMap<Vec<u8>, u32>,
