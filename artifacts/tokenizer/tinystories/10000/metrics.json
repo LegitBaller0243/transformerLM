@@ -1,0 +1,23 @@
+{
+  "dataset": "tinystories",
+  "train_path": "/Users/sameerjivangikar/IdeaProjects/projects/ParaProgram/Stanford336/assignment1-basics/data/TinyStoriesV2-GPT4-train.txt",
+  "validation_path": "/Users/sameerjivangikar/IdeaProjects/projects/ParaProgram/Stanford336/assignment1-basics/data/TinyStoriesV2-GPT4-valid.txt",
+  "requested_vocab_size": 10000,
+  "actual_vocab_size": 10000,
+  "merge_count": 9743,
+  "training_seconds": 63.43542691600305,
+  "training_profiled": false,
+  "python_version": "3.12.9 (main, Feb  4 2025, 14:38:38) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "sample_bytes": 10000,
+  "sample_tokens": 2476,
+  "bytes_per_token": 4.038772213247173,
+  "encode_seconds": [
+    1.8302729159986484,
+    1.8105271670028742,
+    1.7933114169973123
+  ],
+  "median_encode_seconds": 1.8105271670028742,
+  "encode_bytes_per_second": 5523.2532172129095,
+  "encode_tokens_per_second": 1367.5574965819164,
+  "roundtrip_passed": true
+}

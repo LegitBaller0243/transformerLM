@@ -1,0 +1,19 @@
+{
+  "stage_seconds": {
+    "pretokenization": 5.870965207999689,
+    "aggregation": 0.2546522500051651,
+    "rust_training": 4.172519833009574
+  },
+  "unique_pretokens": 334313,
+  "total_pretoken_occurrences": 20719105,
+  "actual_vocab_size": 32000,
+  "merge_count": 31743,
+  "sample_bytes": 99998900,
+  "sampled_peak_process_tree_rss_mb": {
+    "startup": 22.1,
+    "pretokenization": 1014.1,
+    "aggregation": 116.3,
+    "rust_training": 492.6
+  },
+  "memory_measurement_note": "100 ms samples; sums RSS, so shared pages may be counted more than once"
+}

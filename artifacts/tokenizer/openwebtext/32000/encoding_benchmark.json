@@ -1,0 +1,28 @@
+[
+  {
+    "requested_bytes": 10000,
+    "actual_bytes": 10000,
+    "tokens": 2203,
+    "seconds": [
+      12.041446957999142,
+      14.431381333997706,
+      13.793569667002885
+    ],
+    "median_seconds": 13.793569667002885,
+    "bytes_per_second": 724.975495206444,
+    "tokens_per_second": 159.71210159397958
+  },
+  {
+    "requested_bytes": 100000,
+    "actual_bytes": 100000,
+    "tokens": 22028,
+    "seconds": [
+      122.59786662500119,
+      114.15030816700892,
+      111.89625150000211
+    ],
+    "median_seconds": 114.15030816700892,
+    "bytes_per_second": 876.0379328428431,
+    "tokens_per_second": 192.97363584662148
+  }
+]

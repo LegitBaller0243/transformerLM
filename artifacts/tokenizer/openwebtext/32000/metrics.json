@@ -1,0 +1,23 @@
+{
+  "dataset": "openwebtext",
+  "train_path": "/Users/sameerjivangikar/IdeaProjects/projects/ParaProgram/Stanford336/assignment1-basics/data/owt_train.txt",
+  "validation_path": "/Users/sameerjivangikar/IdeaProjects/projects/ParaProgram/Stanford336/assignment1-basics/data/owt_valid.txt",
+  "requested_vocab_size": 32000,
+  "actual_vocab_size": 32000,
+  "merge_count": 31743,
+  "training_seconds": 915.9174653749942,
+  "training_profiled": false,
+  "python_version": "3.12.9 (main, Feb  4 2025, 14:38:38) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "sample_bytes": 10174,
+  "sample_tokens": 2243,
+  "bytes_per_token": 4.535889433794026,
+  "encode_seconds": [
+    11.9974723750056,
+    11.921098332997644,
+    14.09456866698747
+  ],
+  "median_encode_seconds": 11.9974723750056,
+  "encode_bytes_per_second": 848.0119546843508,
+  "encode_tokens_per_second": 186.9560462312757,
+  "roundtrip_passed": true
+}
